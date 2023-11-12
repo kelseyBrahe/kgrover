@@ -1,0 +1,144 @@
+/* fonts */
+p, a {
+    color: #FEF9EF;
+    font-family: 'Zen Maru Gothic', sans-serif;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+    color: #FEF9EF;
+    font-family: 'EB Garamond', serif;
+ }
+
+ .inner-righty {
+    padding-right: 40px;
+ }
+
+ .lefty {
+    padding-left: 40px;
+ }
+
+ /* div containing page content */
+.container {
+    background-color: #4C4B16;
+    min-height: 100vh;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 5%;
+}
+
+/* header */
+.name {
+    font-family: 'EB Garamond', serif;
+    font-size: 4rem;
+    text-align: right;
+}
+
+/* two columns */
+.row > div.left, .head {
+    border-right: 1px solid #FEF9EF;
+    text-align: right;
+    padding-right: 5%;
+}
+.row > div.left {
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+.row > div.right {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 10%;
+    margin-top: -10%;
+}
+
+.row > div > h2 {
+    margin-top: 5%;
+}
+
+.row > div > p {
+    font-size: 1.2em;
+}
+
+/* dropdown for units */
+.collapsible {
+    background-color: #4C4B16;
+    color: white;
+    cursor: pointer;
+    padding: 3%;
+    width: 100%;
+    text-align: right;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1.3em;
+    border: none;
+}
+
+#units {
+    display: none;
+}
+
+.dropdown > p > a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* progress bars */
+
+.progress-bar {
+    position: relative;
+    border: 1px solid white;
+    width: 100%;
+    height: 3vh;
+    border-radius: 25px;
+}
+
+#degree {
+    background-image: linear-gradient(to right, white 95.83%, #4C4B16 4.17%)
+}
+
+#UX {
+    background-image: linear-gradient(to right, white 71.42%, #4C4B16 28.58%)
+}
+
+.label-left {
+    text-align: right;
+    padding: 0;
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.reference {
+    width: 100%;
+    text-align: center;
+}
+
+#boost {
+    width: 55vw;
+}
+
+@media (max-width: 767px) {
+    .row > div.left {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 5%;
+        border-left: 1px solid #FEF9EF;
+        border-right: none;
+    }
+
+    .row > div.right {
+        border-left: 1px solid #FEF9EF;
+        margin-top: 0;
+    }
+
+    .label-left {
+        text-align: left;
+    }
+
+    .collapsible {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    #boost {
+        width: 80%;
+    }
+}

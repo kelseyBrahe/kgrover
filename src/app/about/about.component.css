@@ -1,0 +1,127 @@
+.container-fluid {
+    max-width: 100%;
+    max-height: 100%;
+    height: fit-content;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+
+div.row.first {
+    margin-top: 2%;
+}
+
+div.row.last {
+    margin-bottom: 2%;
+}
+
+.row > div {
+    text-align: center;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.paragraph {
+    padding: 4%;
+}
+
+/* for animation adjustments */
+
+.righty {
+    margin-right: 80px;
+}
+
+.lefty {
+    margin-left: 80px;
+}
+
+img.righty {
+    margin-left: -40px;
+}
+
+img.lefty {
+    margin-left: 40px;
+}
+
+#resume_button{
+    margin-top: 10%;
+    width: 80%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(168, 79, 6);
+    color: white;
+    border: none;
+    font-size: 1em;
+}
+
+#resume_button:hover, #about_button:hover {
+    background-color: rgba(3, 20, 3);
+    color: white;
+}
+
+#resume_button > i {
+    margin-left: 8%;
+    padding-top: 2%;
+    height: 100%;
+    transform: translateY(7%);
+}
+
+@media (max-width: 991px){
+    .row {
+        padding-right: 0;
+    }
+
+    .row > div {
+        height: max-content;
+    }
+
+    .row > div > img {
+        height: 70vh;
+    }
+
+    .paragraph {
+       padding: 10%;
+    }
+
+    div.row.header > h1 {
+        font-size: 3rem;
+    }
+
+    p, h1, h2, h3 {
+        font-size: 1.6rem;
+    }
+
+    #resume_button {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    p, h1, h2, h3 {
+        font-size: 1.3rem;
+    }
+
+    div.row.header > h1 {
+        font-size: 2rem;
+    }
+
+    .paragraph {
+        padding: 5%;
+    }
+
+    #resume_button {
+        font-size: 0.8em;
+    }
+}
