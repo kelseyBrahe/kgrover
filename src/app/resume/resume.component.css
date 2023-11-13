@@ -21,8 +21,8 @@ p, a {
 .container {
     background-color: #4C4B16;
     min-height: 100vh;
-    min-width: 100%;
     max-width: 100%;
+    width: 100%;
     padding: 5%;
 }
 
@@ -42,6 +42,9 @@ p, a {
 .row > div.left {
     padding-top: 4%;
     padding-left: 10%;
+    max-width: 100%;
+    display: wrap;
+    flex-wrap: wrap;
 }
 
 .row > div.right {
@@ -116,17 +119,25 @@ p, a {
 }
 
 @media (max-width: 767px) {
+    .name {
+        font-size: 2.6rem;
+    }
+
     .row > div.left {
         text-align: left;
         padding-right: 0;
         padding-left: 5%;
         border-left: 1px solid #FEF9EF;
         border-right: none;
+        max-width: 100%;
+        width: 100%;
+        font-size: 0.8em;
     }
 
     .row > div.right {
         border-left: 1px solid #FEF9EF;
         margin-top: 0;
+        font-size: 0.8em;
     }
 
     .label-left {
@@ -141,4 +152,16 @@ p, a {
     #boost {
         width: 80%;
     }
+
+    .inner-righty {
+        padding-right: 80px;
+     }
+    
+     .lefty {
+        padding-left: 80px;
+     }
+
+     #units {
+        padding-left: 40px;
+     }
 }
