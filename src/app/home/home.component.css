@@ -47,6 +47,7 @@ h2 {
 #header-row {
     padding:0;
     margin:0;
+    display: flex;
 }
 
 .header {
@@ -58,6 +59,7 @@ h2 {
     justify-content: center;
     padding: 0;
     object-fit: cover;
+    display: flex;
 }
 
 h1.title {
@@ -79,6 +81,7 @@ h1.title {
 
 .left-col {
     padding: 5%;
+    padding-top: 0;
 }
 
 #resume_button, #about_button {

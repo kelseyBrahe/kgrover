@@ -39,6 +39,11 @@ hr {
     color: rgb(168, 79, 6);
 }
 
+.logo {
+    width: 20vw;
+    height: 20vw;
+}
+
 @media (max-width: 767px) {
     .footer {
         height: 50vh;
