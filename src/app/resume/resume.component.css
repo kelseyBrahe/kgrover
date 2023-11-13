@@ -24,6 +24,7 @@ p, a {
     max-width: 100%;
     width: 100%;
     padding: 5%;
+    overflow: hidden;
 }
 
 /* header */
@@ -68,15 +69,17 @@ p, a {
     color: white;
     cursor: pointer;
     padding: 3%;
-    width: 100%;
+    width: 80%;
     text-align: right;
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 1.3em;
     border: none;
+    overflow: hidden;
 }
 
 #units {
     display: none;
+    overflow: hidden;
 }
 
 .dropdown > p > a {
