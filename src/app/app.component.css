@@ -4,6 +4,10 @@
     font-family: 'Zen Maru Gothic', sans-serif;
  }
 
+ .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+}
+
 div.row {
     text-align: left;
 }
