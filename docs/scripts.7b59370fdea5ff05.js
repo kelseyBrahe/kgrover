@@ -1,0 +1,1 @@
+function spinner(e){const n=window.innerWidth;var i;i=n>913&&n<1199?25:n>767&&n<=913?26:n>500&&n<=767?35:n>0&&n<=500?45:20,e.innerHTML=e.innerText.split("").map((s,t)=>`<span style="\n                transform: rotate(${6*t}deg); \n                position: absolute; \n                left: 50%;\n                transform-origin: 0 ${i}vw;\n            ">${s}</span>`).join("")}

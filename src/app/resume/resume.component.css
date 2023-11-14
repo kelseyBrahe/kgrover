@@ -45,7 +45,8 @@ p, a {
     padding-left: 10%;
     max-width: 100%;
     display: wrap;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .row > div.right {
@@ -75,6 +76,7 @@ p, a {
     font-size: 1.3em;
     border: none;
     overflow: hidden;
+    margin-right: 5%;
 }
 
 #units {
@@ -98,10 +100,14 @@ p, a {
 }
 
 #degree {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(95.83%, white), color-stop(4.17%, #4C4B16));
+    background-image: -o-linear-gradient(left, white 95.83%, #4C4B16 4.17%);
     background-image: linear-gradient(to right, white 95.83%, #4C4B16 4.17%)
 }
 
 #UX {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(71.42%, white), color-stop(28.58%, #4C4B16));
+    background-image: -o-linear-gradient(left, white 71.42%, #4C4B16 28.58%);
     background-image: linear-gradient(to right, white 71.42%, #4C4B16 28.58%)
 }
 
@@ -115,10 +121,27 @@ p, a {
 .reference {
     width: 100%;
     text-align: center;
+    padding-bottom: 5%;
 }
 
 #boost {
     width: 55vw;
+}
+
+@media(min-width: 768px) and (max-width: 1094px) {
+    .row > div.left {
+        padding-left: 0;
+        font-size: 0.8em;
+    }
+
+    .collapsible {
+        margin-right: 10%;
+    }
+
+    .row > div.right {
+        padding-right: 0;
+        font-size: 0.8em;
+    }
 }
 
 @media (max-width: 767px) {

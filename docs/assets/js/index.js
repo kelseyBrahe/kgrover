@@ -1,5 +1,3 @@
-const p = "HTML - CSS - JS - Angular JS - Python - Linux - SQL - Git -";
-
 function spinner(text) {
     const width = window.innerWidth;
     var TO = 20;
@@ -25,15 +23,4 @@ function spinner(text) {
                 transform-origin: 0 ${TO}vw;
             ">${char}</span>`
     ).join("");
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const text = document.querySelector('.text p');
-    spinner(text);
-});
-
-window.onresize = () => {
-    document.getElementById("spinner-text").innerHTML = p;
-    const text = document.querySelector('.text p');
-    spinner(text);
 }
